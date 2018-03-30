@@ -2,10 +2,10 @@ package Test;
 
 public class Shape {
 	
-	private Point leftUp;
-	private Point rightDown;
-	private int width;
-	private int height;
+	protected Point leftUp;
+	protected Point rightDown;
+	protected int width;
+	protected int height;
 	
 	//2. setters and getters
 	public Point getLeftUp() {
@@ -75,8 +75,13 @@ public class Shape {
 	}
 			
 	public void calHeight() {
-		height = (int)(leftUp.getY() - rightDown.getY());		
+		height = (int)(leftUp.getY() - rightDown.getY());
 	}
+	
+	public void print() {
+		System.out.println(" ---------도형입니다.-----------");
+	}
+	
 	
 
 }
